@@ -1,6 +1,6 @@
 [user]
 	email = myakampuneeth@gmail.com
-	name = puneeth_aditya_5656
+	name = mugiwaraluffy56
 [filter "lfs"]
 	process = git-lfs filter-process
 	required = true
@@ -13,4 +13,4 @@
 	smtpserverport = 587
 	smtpencryption = tls
 	smtpuser = myakampuneeth@gmail.com
-	from = puneeth_aditya_5656 <myakampuneeth@gmail.com>
+	from = mugiwaraluffy56 <myakampuneeth@gmail.com>

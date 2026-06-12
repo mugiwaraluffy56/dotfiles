@@ -1,0 +1,16 @@
+[user]
+	email = myakampuneeth@gmail.com
+	name = puneeth_aditya_5656
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[core]
+	excludesfile = /Users/puneethadityamyakam/.gitignore_global
+[sendemail]
+	smtpserver = smtp.gmail.com
+	smtpserverport = 587
+	smtpencryption = tls
+	smtpuser = myakampuneeth@gmail.com
+	from = puneeth_aditya_5656 <myakampuneeth@gmail.com>

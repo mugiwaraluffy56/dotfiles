@@ -42,12 +42,12 @@ map("n", "<leader>tv", function() Snacks.terminal(nil, { win = { position = "rig
 map("t", "<C-\\>", "<cmd>close<cr>", { desc = "Close terminal" })
 map("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 
--- Claude Code
-map("n", "<leader>cc", "<cmd>ClaudeCode<cr>", { desc = "Claude Code" })
-map("n", "<leader>cC", "<cmd>ClaudeCodeToggle<cr>", { desc = "Toggle Claude Code" })
-map({ "n", "v" }, "<leader>cs", "<cmd>ClaudeCodeSend<cr>", { desc = "Send to Claude" })
-map("n", "<leader>cf", "<cmd>ClaudeCodeDiffAccept<cr>", { desc = "Accept Claude diff" })
-map("n", "<leader>cr", "<cmd>ClaudeCodeDiffDeny<cr>", { desc = "Reject Claude diff" })
+-- Claude Code (<leader>a = AI prefix, avoids conflict with LazyVim <leader>c = code actions)
+map("n", "<leader>ac", "<cmd>ClaudeCode<cr>",           { desc = "Claude Code" })
+map("n", "<leader>at", "<cmd>ClaudeCodeToggle<cr>",     { desc = "Toggle Claude" })
+map({ "n", "v" }, "<leader>as", "<cmd>ClaudeCodeSend<cr>", { desc = "Send to Claude" })
+map("n", "<leader>af", "<cmd>ClaudeCodeDiffAccept<cr>", { desc = "Accept Claude diff" })
+map("n", "<leader>ar", "<cmd>ClaudeCodeDiffDeny<cr>",   { desc = "Reject Claude diff" })
 
 -- Clear search highlight
 map("n", "<Esc>", "<cmd>nohlsearch<cr>", { desc = "Clear search highlight" })

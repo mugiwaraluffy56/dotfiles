@@ -120,7 +120,7 @@ return {
     "folke/which-key.nvim",
     opts = {
       spec = {
-        { "<leader>c", group = "Claude Code" },
+        { "<leader>a", group = "AI / Claude" },
         { "<leader>r", group = "Rust" },
         { "<leader>g", group = "Go / Git" },
         { "<leader>h", group = "Git hunks" },

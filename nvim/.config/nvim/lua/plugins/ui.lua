@@ -41,7 +41,13 @@ return {
       dashboard = {
         enabled = true,
         preset = {
-          header = "neovim",
+          header = [[
+ ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
+ ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
+ ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
+ ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
+ ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
+ ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝]],
           keys = {
             { icon = " ", key = "f", desc = "Find File",       action = ":lua Snacks.picker.files()" },
             { icon = " ", key = "n", desc = "New File",        action = ":ene | startinsert" },
@@ -52,6 +58,15 @@ return {
             { icon = "󰒲 ", key = "l", desc = "Lazy",           action = ":Lazy" },
             { icon = " ", key = "q", desc = "Quit",            action = ":qa" },
           },
+        },
+        -- Hide header when window too short to fit everything
+        sections = {
+          {
+            section = "header",
+            enabled = function() return vim.o.lines > 28 end,
+          },
+          { section = "keys", gap = 1, padding = 1 },
+          { section = "startup" },
         },
       },
       terminal = {

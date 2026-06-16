@@ -20,11 +20,12 @@ opt.incsearch = true
 -- Visual
 opt.termguicolors = true
 opt.signcolumn = "yes"
-opt.colorcolumn = "100"
+opt.colorcolumn = ""
 opt.cursorline = true
 opt.scrolloff = 8
 opt.sidescrolloff = 8
-opt.wrap = false
+opt.wrap = true
+opt.linebreak = true
 opt.list = true
 opt.listchars = { tab = "» ", trail = "·", nbsp = "␣" }
 
@@ -61,6 +62,5 @@ vim.api.nvim_create_autocmd("FileType", {
   callback = function()
     vim.opt_local.shiftwidth = 4
     vim.opt_local.tabstop = 4
-    vim.opt_local.colorcolumn = "100"
   end,
 })

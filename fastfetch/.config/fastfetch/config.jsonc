@@ -1,0 +1,95 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/master/doc/json_schema.json",
+
+  // Crimson rice — red · black · blue
+
+  "logo": {
+    "source": "~/.config/fastfetch/brand.txt",
+    "type": "file",
+    "padding": {
+      "top": 0,
+      "left": 1
+    }
+  },
+
+  "display": {
+    "separator": "  ",
+    "color": {
+      "keys": "9",
+      "title": "15"
+    }
+  },
+
+  "modules": [
+    {
+      "type": "title",
+      "format": "\u001b[1;15m{user-name}\u001b[0m\u001b[90m@\u001b[0m\u001b[1;9m{host-name}\u001b[0m"
+    },
+    {
+      "type": "separator",
+      "string": "━",
+      "length": 26,
+      "color": "9"
+    },
+    {
+      "type": "os",
+      "key": " OS",
+      "keyColor": "15"
+    },
+    {
+      "type": "kernel",
+      "key": " Kernel",
+      "keyColor": "9"
+    },
+    {
+      "type": "uptime",
+      "key": "󱑎 Uptime",
+      "keyColor": "15"
+    },
+    {
+      "type": "packages",
+      "key": " Pkgs",
+      "keyColor": "9"
+    },
+    {
+      "type": "shell",
+      "key": " Shell",
+      "keyColor": "15"
+    },
+    {
+      "type": "terminal",
+      "key": " Term",
+      "keyColor": "9",
+      "format": "iTerm2"
+    },
+    {
+      "type": "display",
+      "key": " Display",
+      "keyColor": "15"
+    },
+    {
+      "type": "cpu",
+      "key": " CPU",
+      "keyColor": "9"
+    },
+    {
+      "type": "gpu",
+      "key": "󰍛 GPU",
+      "keyColor": "15"
+    },
+    {
+      "type": "memory",
+      "key": " RAM",
+      "keyColor": "9"
+    },
+    {
+      "type": "disk",
+      "key": " Disk",
+      "keyColor": "15",
+      "folders": "/"
+    },
+    {
+      "type": "break"
+    }
+  ]
+}

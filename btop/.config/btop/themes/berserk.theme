@@ -1,0 +1,54 @@
+# Berserk Dark — btop theme
+# Blood red, amber gold, near-black surfaces
+
+# Main background
+theme[main_bg]="#0D0D0D"
+
+# Main text foreground
+theme[main_fg]="#C0C0C0"
+
+# Title foreground (amber gold)
+theme[title]="#C9A227"
+
+# Selected item highlight
+theme[hi_fg]="#CC2200"
+
+# Selected background
+theme[selected_bg]="#2A0000"
+theme[selected_fg]="#C9A227"
+
+# Inactive/border text
+theme[inactive_fg]="#3A3A3A"
+
+# Graph text
+theme[graph_text]="#C0C0C0"
+
+theme[meter_bg]="#1C1C1C"
+
+# CPU graph gradient: dark red → blood → crimson → amber
+theme[cpu_start]="#3A0000"
+theme[cpu_mid]="#8B0000"
+theme[cpu_end]="#C9A227"
+
+# Memory graph
+theme[mem_start]="#2A0000"
+theme[mem_mid]="#6B0000"
+theme[mem_end]="#CC2200"
+
+# Network graph
+theme[net_start]="#1A1A0A"
+theme[net_mid]="#7A6015"
+theme[net_end]="#C9A227"
+
+# Process list
+theme[proc_start]="#1C1C1C"
+theme[proc_mid]="#3A0000"
+theme[proc_end]="#8B0000"
+
+# Box borders
+theme[div_line]="#2A2A2A"
+
+# Temperature colors
+theme[temp_start]="#3A6020"
+theme[temp_mid]="#C9A227"
+theme[temp_end]="#CC2200"

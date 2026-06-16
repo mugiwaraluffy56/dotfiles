@@ -12,7 +12,7 @@ brew install stow
 brew bundle install --file="$DOTFILES_DIR/Brewfile"
 
 cd "$DOTFILES_DIR"
-stow zsh git tmux ssh nvim
+stow zsh git tmux ssh nvim ghostty aerospace lazygit bat fastfetch btop
 
 # Go tools
 if command -v go &>/dev/null; then

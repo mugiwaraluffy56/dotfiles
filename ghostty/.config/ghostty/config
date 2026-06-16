@@ -1,0 +1,33 @@
+# Font
+font-family = "JetBrainsMono Nerd Font"
+font-size = 14
+font-thickening-strength = 128
+
+# Theme
+theme = dark:catppuccin-mocha,light:catppuccin-latte
+
+# Window
+window-padding-x = 12
+window-padding-y = 10
+window-decoration = false
+background-opacity = 0.95
+background-blur-radius = 20
+
+# Cursor
+cursor-style = block
+cursor-style-blink = false
+
+# Shell integration
+shell-integration = zsh
+shell-integration-features = cursor,sudo,title
+
+# Performance
+renderer-max-fps = 120
+
+# Keybindings
+keybind = cmd+t=new_tab
+keybind = cmd+w=close_surface
+keybind = cmd+shift+]=next_tab
+keybind = cmd+shift+[=previous_tab
+keybind = cmd+enter=toggle_fullscreen
+keybind = cmd+k=clear_screen

@@ -36,9 +36,9 @@ map("n", "<S-l>", "<cmd>bnext<cr>", { desc = "Next buffer" })
 map("n", "<leader>bd", "<cmd>bdelete<cr>", { desc = "Delete buffer" })
 
 -- Terminal
-map("n", "<C-\\>", function() Snacks.terminal() end, { desc = "Terminal (float)" })
-map("n", "<leader>th", function() Snacks.terminal(nil, { win = { position = "bottom", height = 0.3 } }) end, { desc = "Terminal (bottom)" })
-map("n", "<leader>tv", function() Snacks.terminal(nil, { win = { position = "right", width = 0.3 } }) end, { desc = "Terminal (right)" })
+map("n", "<C-\\>", function() Snacks.terminal(nil, { win = { title = false } }) end, { desc = "Terminal (float)" })
+map("n", "<leader>th", function() Snacks.terminal(nil, { win = { position = "bottom", height = 0.3, title = false } }) end, { desc = "Terminal (bottom)" })
+map("n", "<leader>tv", function() Snacks.terminal(nil, { win = { position = "right", width = 0.3, title = false } }) end, { desc = "Terminal (right)" })
 map("t", "<C-\\>", "<cmd>close<cr>", { desc = "Close terminal" })
 map("t", "<ESC>", "<C-\\><C-n>", { desc = "Exit terminal mode" })
 

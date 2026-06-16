@@ -2,7 +2,15 @@ return {
   {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
-    config = true,
+    opts = {
+      terminal = {
+        side = "right",
+        provider = "snacks",
+        opts = {
+          win = { title = false },
+        },
+      },
+    },
     cmd = { "ClaudeCode", "ClaudeCodeToggle", "ClaudeCodeSend", "ClaudeCodeDiffAccept", "ClaudeCodeDiffDeny" },
     keys = {
       { "<leader>ac", "<cmd>ClaudeCode<cr>",          desc = "Claude Code" },

@@ -27,9 +27,6 @@ require("lazy").setup({
     { import = "lazyvim.plugins.extras.lang.markdown" },
     { import = "lazyvim.plugins.extras.lang.yaml" },
 
-    -- Editor extras
-    { import = "lazyvim.plugins.extras.editor.neo-tree" },
-
     -- Formatting
     { import = "lazyvim.plugins.extras.formatting.prettier" },
 

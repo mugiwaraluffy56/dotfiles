@@ -63,5 +63,9 @@ autoload -Uz compinit && compinit
 # Fastfetch on new interactive non-tmux shell
 if [[ $- == *i* ]] && [[ -z "$TMUX" ]]; then fastfetch; fi
 
+# Tab title: current path, no proxy icon
+precmd() { print -Pn "\e]0;%~\a" }
+preexec() { print -Pn "\e]0;%~ — $1\a" }
+
 # Powerlevel10k config
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh

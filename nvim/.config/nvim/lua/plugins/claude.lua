@@ -5,6 +5,7 @@ return {
     "coder/claudecode.nvim",
     dependencies = { "folke/snacks.nvim" },
     config = true,
+    cmd = { "ClaudeCode", "ClaudeCodeToggle", "ClaudeCodeSend", "ClaudeCodeDiffAccept", "ClaudeCodeDiffDeny" },
     keys = {
       { "<leader>cc", "<cmd>ClaudeCode<cr>", desc = "Claude Code" },
       { "<leader>cC", "<cmd>ClaudeCodeToggle<cr>", desc = "Toggle Claude Code" },

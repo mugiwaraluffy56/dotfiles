@@ -1,10 +1,9 @@
 # Font
 font-family = "JetBrainsMono Nerd Font"
 font-size = 14
-font-thickening-strength = 128
 
 # Theme
-theme = dark:catppuccin-mocha,light:catppuccin-latte
+theme = dark:Catppuccin Mocha,light:Catppuccin Latte
 
 # Window
 window-padding-x = 12
@@ -20,9 +19,6 @@ cursor-style-blink = false
 # Shell integration
 shell-integration = zsh
 shell-integration-features = cursor,sudo,title
-
-# Performance
-renderer-max-fps = 120
 
 # Keybindings
 keybind = cmd+t=new_tab

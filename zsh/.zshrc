@@ -36,6 +36,8 @@ ZSH_HIGHLIGHT_STYLES[comment]='fg=242'
 ZSH_HIGHLIGHT_STYLES[arg0]='fg=33,bold'
 
 # PATH
+export GOPATH="$HOME/go"
+export PATH="$GOPATH/bin:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
 export GITPERLLIB=/opt/homebrew/share/perl5:$HOME/perl5/lib/perl5:/opt/homebrew/Cellar/git/2.52.0/share/perl5
 export PATH="/Users/puneethadityamyakam/.antigravity/antigravity/bin:$PATH"

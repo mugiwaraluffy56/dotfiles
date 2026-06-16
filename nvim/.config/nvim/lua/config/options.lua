@@ -42,6 +42,8 @@ opt.updatetime = 200
 -- Completion
 opt.completeopt = "menu,menuone,noselect"
 opt.pumheight = 10
+opt.pumblend = 10   -- popup menu transparency
+opt.winblend = 10   -- floating window transparency
 
 -- Clipboard
 opt.clipboard = "unnamedplus"
